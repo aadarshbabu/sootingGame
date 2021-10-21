@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.f1{
+    position: absolute;
+    height: 220px;
+    width: 150px;
+    bottom: 0;
+
+}
+.f2{
+    position: absolute;
+    height: 250px;
+    width: 150px;
+    bottom: 0;
+    right: 0;
+}
+.bulet{
+    z-index: -1;
+    right: 0;
+    left: 90px;
+    bottom: 160px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+  
+}
+
+.bulet2{
+    z-index: -1;
+    bottom: 160px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 90px;
+    transform: rotate(180deg);
+}
+.bulani{
+    animation-name: bullet;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+}
+.bulani2{
+    animation: bullet1 1s linear .5s;
+}
+@keyframes bullet1 {
+    0%{
+        right: 90px;
+      
+    }
+    100%{
+     right:90%;
+    }
+}
+@keyframes bullet {
+    0%{
+        left: 90px;
+      
+    }
+    100%{
+     left: 95%;
+    }
+}
+
+/* Start Game Coding */
+
+#start{
+    display: block;
+    margin: 50px auto;
+    border: 1px solid red;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 8px 8px;
+    font-size: medium;
+    cursor: pointer;
+}
