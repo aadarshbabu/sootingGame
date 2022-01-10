@@ -6,6 +6,7 @@ let scr2 = document.querySelector("#scorep2")
 let msg = document.querySelector(".msg");
 let round = 0;
 let p1health = 10;
+
 let p2health = 10;
 let p1won = 0;
 let p2won = 0;
